@@ -12,7 +12,7 @@ func _ready() -> void:
 
 	center.visible = true
 	progress_bar.value = 0.0
-	status_label.text = "Chargement..."
+	status_label.text = tr("LOADING")
 
 	LoadingManager.loading_finished.connect(_on_loading_finished, CONNECT_ONE_SHOT)
 	LoadingManager.start_loading()

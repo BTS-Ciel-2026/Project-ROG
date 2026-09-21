@@ -1,0 +1,20 @@
+keys,fr,en
+TITLE,Project: ROG,Project: ROG
+MENU_MODE_1,Mode de jeu 1,Game Mode 1
+MENU_MODE_2,Mode de jeu 2,Game Mode 2
+MENU_MODE_3,Mode de jeu 3,Game Mode 3
+MENU_MODE_MULTI,Mode Multijoueur,Multiplayer Mode
+MENU_OPTION,OPTIONS,OPTIONS
+MENU_LEAVE,QUITTER,LEAVE
+OPTIONS_TITLE,Options,Options
+OPTIONS_TAB_AUDIO,Son,Audio
+OPTIONS_TAB_GRAPHICS,Graphisme,Graphics
+OPTIONS_TAB_OTHER,Autres,Others
+OPTIONS_AUDIO_MASTER,Volume principal,Master Volume
+OPTIONS_AUDIO_MUSIC,Musique,Music
+OPTIONS_AUDIO_SFX,Effets,SFX
+OPTIONS_FULLSCREEN,Plein ecran,Fullscreen
+OPTIONS_VSYNC,VSync,VSync
+OPTIONS_LANGUAGE,Langue,Language
+OPTIONS_BACK,Retour,Back
+LOADING,Chargement...,Loading...

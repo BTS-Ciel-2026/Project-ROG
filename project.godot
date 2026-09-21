@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 LoadingManager="*res://scripts/loading_manager.gd"
+SettingsManager="*res://scripts/settings_manager.gd"
 
 [display]
 
@@ -25,6 +26,11 @@ window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://locale/translations.en.translation", "res://locale/translations.fr.translation")
+locale/fallback="en"
 
 [physics]
 
