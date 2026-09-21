@@ -24,6 +24,17 @@
 
 ---
 
+## Contrôles
+
+**Exigence** : le jeu doit être jouable sans friction en **manette** ou au **clavier**.
+
+- Les deux modes d'entrée doivent fonctionner partout (menus, gameplay, options)
+- Pas de fonctionnalité bloquée ou dégradée selon le périphérique choisi
+- Navigation UI pensée pour les deux (focus, boutons, raccourcis clavier)
+- Rebinding des touches / boutons prévu dans les options (à implémenter plus tard)
+
+---
+
 ## Histoire & Univers (Lore)
 
 ### Contexte
