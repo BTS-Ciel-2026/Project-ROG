@@ -1,6 +1,6 @@
 extends Control
 
-const MAIN_MENU_SCENE := "res://scenes/main_menu.tscn"
+const MAIN_MENU_SCENE := "res://scenes/ui/menus/main_menu.tscn"
 
 @onready var title_label: Label = $Margin/VBox/TitleFrame/Title
 @onready var tab_container: TabContainer = $Margin/VBox/TabContainer

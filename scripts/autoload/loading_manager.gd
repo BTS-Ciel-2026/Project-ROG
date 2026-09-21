@@ -5,13 +5,13 @@ extends Node
 
 signal loading_finished
 
-const NEXT_SCENE := "res://scenes/main_menu.tscn"
+const NEXT_SCENE := "res://scenes/ui/menus/main_menu.tscn"
 
 # Ressources a precharger avant le menu. Vide = pas d'ecran de chargement.
 const PRELOAD_PATHS: Array[String] = [
 	# Exemples pour plus tard :
 	# "res://assets/tilesets/dungeon.tres",
-	# "res://scenes/game_world.tscn",
+	# "res://scenes/game/world.tscn",
 ]
 
 var _total_count: int = 0

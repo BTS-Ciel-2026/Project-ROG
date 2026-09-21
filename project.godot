@@ -11,15 +11,15 @@ config_version=5
 [application]
 
 config/name="Project: ROG"
-run/main_scene="res://scenes/loading_screen.tscn"
+run/main_scene="res://scenes/ui/menus/loading_screen.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-LoadingManager="*res://scripts/loading_manager.gd"
-SaveManager="*res://scripts/save_manager.gd"
-SettingsManager="*res://scripts/settings_manager.gd"
+LoadingManager="*res://scripts/autoload/loading_manager.gd"
+SaveManager="*res://scripts/autoload/save_manager.gd"
+SettingsManager="*res://scripts/autoload/settings_manager.gd"
 
 [display]
 
@@ -33,12 +33,7 @@ window/stretch/aspect="expand"
 locale/translations=PackedStringArray("res://locale/translations.en.translation", "res://locale/translations.fr.translation")
 locale/fallback="en"
 
-[physics]
-
-3d/physics_engine="Jolt Physics"
-
 [rendering]
 
-rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0

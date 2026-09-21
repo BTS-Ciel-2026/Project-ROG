@@ -1,7 +1,7 @@
 extends Control
 
-const OPTIONS_SCENE := "res://scenes/options_menu.tscn"
-const SAVE_SLOTS_SCENE := "res://scenes/save_slots_menu.tscn"
+const OPTIONS_SCENE := "res://scenes/ui/menus/options_menu.tscn"
+const SAVE_SLOTS_SCENE := "res://scenes/ui/menus/save_slots_menu.tscn"
 
 @onready var title_label: Label = $Margin/VBox/TitleFrame/Title
 @onready var mode_1_button: Button = $Margin/VBox/ModesRow/Mode1

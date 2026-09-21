@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bqx8options01"]
 
-[ext_resource type="Script" path="res://scripts/options_menu.gd" id="1_options"]
+[ext_resource type="Script" path="res://scripts/ui/menus/options_menu.gd" id="1_options"]
 
 [node name="OptionsMenu" type="Control"]
 layout_mode = 3
