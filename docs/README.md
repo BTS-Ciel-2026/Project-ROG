@@ -1,4 +1,4 @@
-# Documentation — ROG Project
+# Documentation — Project: ROG
 
 Dossier pour les idées, specs et notes du jeu.
 

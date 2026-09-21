@@ -1,4 +1,4 @@
-# ROG Project — Game Design Document
+# Project: ROG — Game Design Document
 
 > Document vivant. On complète au fur et à mesure.
 
@@ -8,7 +8,7 @@
 
 | Champ | Détail |
 |-------|--------|
-| **Titre provisoire** | ROG Project |
+| **Titre provisoire** | Project: ROG |
 | **Genre** | Action RPG Roguelike |
 | **Pitch (en une phrase)** | *[À compléter — résumer l'idée principale et l'accroche du jeu]* |
 | **Public cible** | Joueurs roguelike, casual |
