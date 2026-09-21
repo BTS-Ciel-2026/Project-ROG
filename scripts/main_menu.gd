@@ -1,6 +1,7 @@
 extends Control
 
 const OPTIONS_SCENE := "res://scenes/options_menu.tscn"
+const SAVE_SLOTS_SCENE := "res://scenes/save_slots_menu.tscn"
 
 @onready var title_label: Label = $Margin/VBox/TitleFrame/Title
 @onready var mode_1_button: Button = $Margin/VBox/ModesRow/Mode1
@@ -27,15 +28,20 @@ func _apply_locale() -> void:
 
 
 func _on_mode_1_pressed() -> void:
-	print("[Menu] Mode de jeu 1 - pas encore implemente")
+	_open_save_slots(1)
 
 
 func _on_mode_2_pressed() -> void:
-	print("[Menu] Mode de jeu 2 - pas encore implemente")
+	_open_save_slots(2)
 
 
 func _on_mode_3_pressed() -> void:
-	print("[Menu] Mode de jeu 3 - pas encore implemente")
+	_open_save_slots(3)
+
+
+func _open_save_slots(game_mode: int) -> void:
+	SaveManager.set_selected_game_mode(game_mode)
+	get_tree().change_scene_to_file(SAVE_SLOTS_SCENE)
 
 
 func _on_mode_multi_pressed() -> void:

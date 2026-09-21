@@ -18,3 +18,14 @@ OPTIONS_VSYNC,VSync,VSync
 OPTIONS_LANGUAGE,Langue,Language
 OPTIONS_BACK,Retour,Back
 LOADING,Chargement...,Loading...
+SAVE_SLOTS_TITLE,Sauvegardes - Mode %d,Save Slots - Mode %d
+SAVE_SLOT_LABEL,Slot %d,Slot %d
+SAVE_SLOT_EMPTY,Vide,Empty
+SAVE_SLOT_NEW,Nouvelle partie,New Game
+SAVE_SLOT_CONTINUE,Continuer,Continue
+SAVE_SLOT_OVERWRITE,Ecraser,Overwrite
+SAVE_SLOT_CANCEL,Annuler,Cancel
+SAVE_SLOT_LAST_PLAYED,Derniere partie: %s,Last played: %s
+SAVE_SLOTS_BACK,Retour,Back
+SAVE_SLOT_ACTION_TITLE,Slot %d,Slot %d
+GAME_MODE_LABEL,Mode,Mode
