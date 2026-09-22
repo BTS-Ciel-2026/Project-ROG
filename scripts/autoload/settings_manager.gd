@@ -14,6 +14,7 @@ var music_volume: float = 1.0
 var sfx_volume: float = 1.0
 var fullscreen: bool = false
 var vsync: bool = true
+var tutorial_completed: bool = false
 
 
 func _ready() -> void:
@@ -66,6 +67,19 @@ func set_vsync(enabled: bool) -> void:
 	settings_changed.emit()
 
 
+func has_completed_tutorial() -> bool:
+	return tutorial_completed
+
+
+func mark_tutorial_completed() -> void:
+	if tutorial_completed:
+		return
+
+	tutorial_completed = true
+	save_settings()
+	settings_changed.emit()
+
+
 func load_settings() -> void:
 	var config := ConfigFile.new()
 	if config.load(SETTINGS_PATH) != OK:
@@ -77,6 +91,9 @@ func load_settings() -> void:
 	sfx_volume = float(config.get_value("settings", "sfx_volume", 1.0))
 	fullscreen = bool(config.get_value("settings", "fullscreen", false))
 	vsync = bool(config.get_value("settings", "vsync", true))
+	tutorial_completed = bool(
+		config.get_value("settings", "tutorial_completed", config.get_value("settings", "demo_completed", false))
+	)
 
 
 func save_settings() -> void:
@@ -87,6 +104,7 @@ func save_settings() -> void:
 	config.set_value("settings", "sfx_volume", sfx_volume)
 	config.set_value("settings", "fullscreen", fullscreen)
 	config.set_value("settings", "vsync", vsync)
+	config.set_value("settings", "tutorial_completed", tutorial_completed)
 	config.save(SETTINGS_PATH)
 
 

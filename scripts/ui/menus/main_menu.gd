@@ -2,17 +2,23 @@ extends Control
 
 const OPTIONS_SCENE := "res://scenes/ui/menus/options_menu.tscn"
 const SAVE_SLOTS_SCENE := "res://scenes/ui/menus/save_slots_menu.tscn"
+const TUTORIAL_SCENE := "res://scenes/ui/menus/tutorial_menu.tscn"
 
 @onready var title_label: Label = $Margin/VBox/TitleFrame/Title
 @onready var mode_1_button: Button = $Margin/VBox/ModesRow/Mode1
 @onready var mode_2_button: Button = $Margin/VBox/ModesRow/Mode2
 @onready var mode_3_button: Button = $Margin/VBox/ModesRow/Mode3
 @onready var mode_multi_button: Button = $Margin/VBox/ModesRow/ModeMulti
+@onready var tutorial_button: Button = $Margin/VBox/TutorialButton
 @onready var option_button: Button = $Margin/VBox/BottomRow/Option
 @onready var leave_button: Button = $Margin/VBox/BottomRow/Leave
 
 
 func _ready() -> void:
+	if not SettingsManager.has_completed_tutorial():
+		get_tree().call_deferred("change_scene_to_file", TUTORIAL_SCENE)
+		return
+
 	_apply_locale()
 	SettingsManager.locale_changed.connect(_apply_locale)
 
@@ -23,6 +29,7 @@ func _apply_locale() -> void:
 	mode_2_button.text = tr("MENU_MODE_2")
 	mode_3_button.text = tr("MENU_MODE_3")
 	mode_multi_button.text = tr("MENU_MODE_MULTI")
+	tutorial_button.text = tr("MENU_TUTORIAL")
 	option_button.text = tr("MENU_OPTION")
 	leave_button.text = tr("MENU_LEAVE")
 
@@ -46,6 +53,10 @@ func _open_save_slots(game_mode: int) -> void:
 
 func _on_mode_multi_pressed() -> void:
 	print("[Menu] Mode Multijoueur - pas encore implemente")
+
+
+func _on_tutorial_pressed() -> void:
+	get_tree().change_scene_to_file(TUTORIAL_SCENE)
 
 
 func _on_option_pressed() -> void:

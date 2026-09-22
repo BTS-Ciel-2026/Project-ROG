@@ -6,6 +6,12 @@ MENU_MODE_3,Mode de jeu 3,Game Mode 3
 MENU_MODE_MULTI,Mode Multijoueur,Multiplayer Mode
 MENU_OPTION,OPTIONS,OPTIONS
 MENU_LEAVE,QUITTER,LEAVE
+MENU_TUTORIAL,Tutoriel,Tutorial
+TUTORIAL_TITLE,Tutoriel,Tutorial
+TUTORIAL_BODY,Contenu du tutoriel a venir...,Tutorial content coming soon...
+TUTORIAL_FINISH,Terminer,Finish
+TUTORIAL_BACK,Retour,Back
+TUTORIAL_MANDATORY_HINT,Bienvenue ! Suivez ce tutoriel pour commencer.,Welcome! Complete this tutorial to get started.
 OPTIONS_TITLE,Options,Options
 OPTIONS_TAB_AUDIO,Son,Audio
 OPTIONS_TAB_GRAPHICS,Graphisme,Graphics
