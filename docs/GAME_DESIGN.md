@@ -10,7 +10,7 @@
 |-------|--------|
 | **Titre provisoire** | Project: ROG |
 | **Genre** | Action RPG Roguelike |
-| **Pitch (en une phrase)** | *[À compléter — résumer l'idée principale et l'accroche du jeu]* |
+| **Pitch (en une phrase)** | Envoie des aventuriers "loyaux" pour extraire les richesses du donjons |
 | **Public cible** | Joueurs roguelike, casual |
 | **Style visuel & ambiance** | Médiéval fantaisie, 2D isométrique |
 
@@ -43,7 +43,7 @@
 
 ### Objectif du joueur
 
-*[À compléter — Quel est le but ultime ?]*
+*[Retrouver la richesse et le statut nous ayant été volé avec l'aide d'aventuriers]*
 
 ### Élément différenciant
 
