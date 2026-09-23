@@ -21,11 +21,11 @@ size = Vector2(289.4267, 479.1256)
 script = ExtResource("1_dbxjd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=608064926]
-position = Vector2(241.5, 228.5)
+position = Vector2(1.5258789e-05, 0)
 scale = Vector2(0.24531251, 0.28593752)
 sprite_frames = SubResource("SpriteFrames_oq4r4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D" unique_id=734231518]
-position = Vector2(-48.917175, -66.44806)
+position = Vector2(-32.611572, -10.491806)
 scale = Vector2(0.99999976, 1)
 shape = SubResource("RectangleShape2D_bg6bf")

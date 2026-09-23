@@ -1,6 +1,16 @@
 [gd_scene format=3 uid="uid://b6sjhxivc81y1"]
 
+[ext_resource type="Texture2D" uid="uid://obe3ai54rwpm" path="res://assets/maps/Sans titre.png" id="1_rfgtk"]
+[ext_resource type="PackedScene" uid="uid://b1u0q7l1ob0kn" path="res://scenes/reusables/physical bodies/player_body.tscn" id="2_gmlqv"]
+
 [node name="tuto" type="Node2D" unique_id=560449727]
 
 [node name="tuto_map" type="TileMap" parent="." unique_id=214812570]
 format = 2
+
+[node name="SansTitre" type="Sprite2D" parent="." unique_id=155905116]
+position = Vector2(645, 361)
+texture = ExtResource("1_rfgtk")
+
+[node name="player_body" parent="." unique_id=384275298 instance=ExtResource("2_gmlqv")]
+position = Vector2(151, 176)
