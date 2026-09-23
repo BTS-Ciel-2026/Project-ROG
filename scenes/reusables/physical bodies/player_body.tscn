@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://b1u0q7l1ob0kn"]
 
-[ext_resource type="Script" uid="uid://6n4po6h4ojfq" path="res://scripts/physics and features/player_body.gd" id="1_oq4r4"]
-[ext_resource type="Texture2D" uid="uid://dchf4j84dv1d6" path="res://assets/placeholder/pixel_art.png" id="2_bg6bf"]
+[ext_resource type="Script" uid="uid://6n4po6h4ojfq" path="res://scripts/physics and features/player_body.gd" id="1_dbxjd"]
+[ext_resource type="Texture2D" uid="uid://dchf4j84dv1d6" path="res://assets/placeholder/pixel_art.png" id="2_v8m3e"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_oq4r4"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_bg6bf")
+"texture": ExtResource("2_v8m3e")
 }],
 "loop": 1,
 "name": &"default",
@@ -18,7 +18,7 @@ animations = [{
 size = Vector2(289.4267, 479.1256)
 
 [node name="player_body" type="CharacterBody2D" unique_id=384275298]
-script = ExtResource("1_oq4r4")
+script = ExtResource("1_dbxjd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=608064926]
 position = Vector2(241.5, 228.5)
