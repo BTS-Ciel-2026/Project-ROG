@@ -14,3 +14,9 @@ func get_input():
 func _physics_process(delta: float) -> void:
 	get_input()
 	move_and_slide()
+	
+func updt_anims(delta: float) -> void:
+		if velocity.length() > 0:
+			$AnimatedSprite2D.play("walk")
+		else:
+			$AnimatedSprite2D.play("idle")

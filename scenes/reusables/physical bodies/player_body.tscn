@@ -10,7 +10,12 @@ animations = [{
 "texture": ExtResource("2_v8m3e")
 }],
 "loop": 1,
-"name": &"default",
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"walk",
 "speed": 5.0
 }]
 
@@ -24,6 +29,7 @@ script = ExtResource("1_dbxjd")
 position = Vector2(1.5258789e-05, 0)
 scale = Vector2(0.24531251, 0.28593752)
 sprite_frames = SubResource("SpriteFrames_oq4r4")
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D" unique_id=734231518]
 position = Vector2(-32.611572, -10.491806)
